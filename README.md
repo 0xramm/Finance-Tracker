@@ -11,7 +11,7 @@ This Flask-based web application serves as a comprehensive finance tracker, enab
 
 ## Live Preview
 
-[Finance-Tracker-Live-Preview](https://0xramm.pythonanywhere.com/)
+<a href="https://0xramm.pythonanywhere.com/" target="_blank">Finance-Tracker-Live-Preview</a>
 
 
 
