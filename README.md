@@ -9,6 +9,11 @@ This Flask-based web application serves as a comprehensive finance tracker, enab
 - **Analytics**: Insights into spending patterns by payment method and category.
 - **Responsive Interface**: User-friendly design for easy navigation and interaction.
 
+## Live Preview
+```
+https://0xramm.pythonanywhere.com/
+```
+
 ## Screenshots
 
 <!-- Add screenshots of your application here -->
