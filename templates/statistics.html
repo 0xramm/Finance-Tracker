@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Statistics - Finance Tracker
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <!-- Total Expenses -->
+    <div class="card mb-4">
+        <div class="card-header">
+            Total Expenses
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">₹{{ total_expenses }}</h5>
+        </div>
+    </div>
+
+<!-- Expense Breakdown by Category -->
+<div class="card mb-4">
+    <div class="card-header">
+        Expense Breakdown by Category
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Amount (₹)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for category, amount in expense_by_category.items() %}
+                <tr>
+                    <td>{{ category }}</td>
+                    <td>₹{{ amount }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+    <!-- Top Spending Categories -->
+    <div class="card mb-4">
+        <div class="card-header">
+            Top Spending Categories
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                {% for category, amount in top_spending_categories.items() %}
+                <li class="list-group-item">{{ category }}: ₹{{ amount }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
